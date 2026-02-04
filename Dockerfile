@@ -40,11 +40,11 @@ USER nextjs
 
 EXPOSE 3000
 
-ENV PORT=3000
+# PORT 将由 Koyeb 设置，不要硬编码
 ENV HOSTNAME="0.0.0.0"
 
-# 运行时环境变量
-ENV AI_BUILDER_TOKEN=""
+# 运行时环境变量（AI_BUILDER_TOKEN 会自动注入）
 ENV AI_BUILDER_BASE_URL="https://space.ai-builders.com/backend"
 
+# 使用 PORT 环境变量（Koyeb 会自动设置）
 CMD ["node", "server.js"]
