@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Koyeb/AI Builders 部署需要 standalone 输出
-  output: 'standalone',
+  // 移除 standalone 输出，使用自定义 server.js
+  // output: 'standalone',
 }
 
 module.exports = nextConfig
