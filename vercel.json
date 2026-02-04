@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "app/api/chat/route.ts": {
+      "maxDuration": 240
+    }
+  },
+  "env": {
+    "AI_BUILDER_TOKEN": "@ai_builder_token",
+    "AI_BUILDER_BASE_URL": "@ai_builder_base_url"
+  }
+}
